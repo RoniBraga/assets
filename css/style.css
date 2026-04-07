@@ -3,6 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    
+}
+body{
+     overflow-x: hidden;
 }
 header{
     background-color: black;  
@@ -15,6 +19,7 @@ header{
     margin: auto;
     display: flex;
     align-items: center;
+   
 
 }
 .logo{
@@ -60,7 +65,7 @@ header{
     background-image: url(../../midia/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     height: calc(100vh - 100px);
     overflow: hidden;
 }
@@ -115,7 +120,7 @@ header{
     width: 100vw;
     height: 20px;
    position: absolute;
-   margin-top: -30px;   
+   margin-top: -50px;   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -136,4 +141,101 @@ header{
 }
 .banner  .active{
     background-color: #B28756;
+}
+.button{
+     text-decoration: none;
+    color: #fff;
+    background-color: #B28756;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.default{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.default .section_title{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.default .section_desc{
+    margin-top: 13px;
+    margin-bottom: 40px;
+    font-size: 10px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+.default .section_body{
+    min-width: 1140px;    
+    margin-bottom: 40px;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .section_title{
+    color: #000;
+}
+.default.dark{
+    background-color: #000;
+}
+.default.dark .section_title,
+.default.dark .section_body{
+    color: #f7f7f7;
+}
+
+
+
+
+
+
+/*
+CSS AREAS ESPECIFICAS
+*/
+.section_about_us{
+    display:flex;
+}
+.section_about_us_left{
+    flex:1;
+    padding: 0px 30px;
+}
+.section_about_us_left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.section_about_us_right{
+    width:500px;
+    
+}
+.section_about_us_right img{
+    width: 480px;
+    text-align:center;
+    box-shadow:0px 5px 10px #333;
+}
+.section_services{
+    display: flex;
+}
+.section_service{
+    flex: 1;
+    text-align: center;   
+    border-right: 1px solid #333;
+    line-height: 30px;
+}
+.section_service:first-child{
+    border-left: 1px solid #333;
+}
+.service_title{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.service_description{
+    color: #333;
 }
